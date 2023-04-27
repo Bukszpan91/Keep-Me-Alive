@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>Keep_Me_Alive</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <ApplicationIcon>HomeOffice.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="HomeOffice.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="HomeOffice.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="HomeOffice.png" />
+  </ItemGroup>
+
+</Project>

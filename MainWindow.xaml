@@ -1,0 +1,22 @@
+﻿<Window x:Class="Keep_Me_Alive.MainWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Keep Me Alive" Height="215" Width="455" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FFEDECEC" Icon="/HomeOffice.png">
+    <Grid Margin="10,10,10,9">
+        <Button Click="Button_Click" Content="ON" HorizontalAlignment="Left" Height="45" Margin="185,60,0,0" VerticalAlignment="Top" Width="95" Background="#FF24A70A" FontWeight="Bold" Cursor="Hand"/>
+        <Button Click="Button_Click_1" Content="OFF" HorizontalAlignment="Left" Height="45" Margin="304,60,0,0" VerticalAlignment="Top" Width="96" Background="#FFCA2C08" FontWeight="Bold" Cursor="Hand"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="237,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontWeight="Bold"><Run Language="pl-pl" Text="Status"/></TextBlock>
+        <Label Content="Made by Szpyra Solutions" HorizontalAlignment="Left" Height="28" Margin="185,121,0,0" VerticalAlignment="Top" Width="215"/>
+        <Image HorizontalAlignment="Left" Height="125" Margin="21,10,0,0" VerticalAlignment="Top" Width="116" Source="/HomeOffice.png">
+            <Image.OpacityMask>
+                <ImageBrush  Stretch="Uniform" ImageSource="/HomeOffice.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Ellipse Name ="Status" HorizontalAlignment="Left" Height="25" Width="25" Margin="302,16,0,0" Stroke="Black" VerticalAlignment="Top" Fill="Red"/>
+        <Button Content="Info" Click="Button_Click_2" HorizontalAlignment="Left" Height="28" Margin="359,120,0,0" VerticalAlignment="Top" Width="41"/>
+
+    </Grid>
+</Window>
